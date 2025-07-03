@@ -11,11 +11,11 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Let's Work Together
+              Let's Build Something Great
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-8"></div>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+              Ready to optimize your infrastructure and accelerate your deployments? Let's discuss how we can transform your DevOps practices together.
             </p>
           </div>
 
@@ -25,8 +25,8 @@ const Contact = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
                 <p className="text-gray-300 mb-8 leading-relaxed">
-                  I'm always open to discussing new opportunities, creative projects, or potential collaborations. 
-                  Feel free to reach out if you'd like to work together!
+                  I'm always open to discussing new infrastructure challenges, cloud migrations, 
+                  or DevOps transformations. Let's connect and explore how I can help optimize your systems!
                 </p>
               </div>
 
@@ -37,7 +37,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-gray-300">john.doe@example.com</p>
+                    <p className="text-gray-300">devops.engineer@example.com</p>
                   </div>
                 </div>
 
@@ -57,13 +57,13 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-gray-300">San Francisco, CA</p>
+                    <p className="text-gray-300">Remote / Global</p>
                   </div>
                 </div>
               </div>
 
               <div className="pt-8">
-                <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
+                <h4 className="text-lg font-semibold mb-4">Connect With Me</h4>
                 <div className="flex space-x-4">
                   {[
                     { icon: Linkedin, href: "#" },
@@ -111,7 +111,7 @@ const Contact = () => {
                   <Input
                     id="subject"
                     type="text"
-                    placeholder="What's this about?"
+                    placeholder="Infrastructure Consultation"
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
                   />
                 </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     rows={5}
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell me about your infrastructure challenges..."
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 resize-none"
                   />
                 </div>

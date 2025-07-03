@@ -5,26 +5,50 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and Stripe integration. Features include user authentication, product management, and real-time order tracking.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800&h=600",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Multi-Cloud Infrastructure",
+      description: "Designed and implemented a hybrid cloud architecture spanning AWS and Azure with automated failover, reducing downtime by 99.9% and cutting infrastructure costs by 30%.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800&h=600",
+      technologies: ["AWS", "Azure", "Terraform", "Kubernetes"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&q=80&w=800&h=600",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+      title: "CI/CD Pipeline Automation",
+      description: "Built comprehensive CI/CD pipelines using Jenkins and GitLab CI, enabling automated testing and deployment for 50+ microservices with zero-downtime deployments.",
+      image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80&w=800&h=600",
+      technologies: ["Jenkins", "Docker", "GitLab CI", "Ansible"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Analytics Dashboard",
-      description: "A comprehensive analytics dashboard with interactive charts, real-time data visualization, and custom reporting capabilities.",
+      title: "Container Orchestration Platform",
+      description: "Architected a scalable Kubernetes platform supporting 200+ containers across multiple environments with automated scaling, monitoring, and logging solutions.",
+      image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=800&h=600",
+      technologies: ["Kubernetes", "Docker", "Prometheus", "Grafana"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Infrastructure as Code",
+      description: "Developed comprehensive IaC solutions using Terraform, managing infrastructure for 15+ environments with version control, automated provisioning, and compliance checks.",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800&h=600",
+      technologies: ["Terraform", "AWS", "Azure", "Vault"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Monitoring & Alerting System",
+      description: "Implemented enterprise-grade monitoring solution with Prometheus, Grafana, and ELK stack, providing real-time insights and proactive alerting for critical systems.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600",
-      technologies: ["React", "D3.js", "Python", "PostgreSQL"],
+      technologies: ["Prometheus", "Grafana", "ELK Stack", "AlertManager"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Security & Compliance Automation",
+      description: "Developed automated security scanning and compliance checking pipelines, ensuring SOC2 and PCI compliance while maintaining rapid deployment cycles.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600",
+      technologies: ["Vault", "Ansible", "Security Scanning", "Compliance"],
       liveUrl: "#",
       githubUrl: "#"
     }
@@ -40,7 +64,7 @@ const Projects = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Here are some of my recent projects that showcase my skills and passion for development
+              Infrastructure solutions that have transformed organizations and accelerated development workflows
             </p>
           </div>
 
@@ -71,7 +95,7 @@ const Projects = () => {
                   <div className="flex gap-3">
                     <Button size="sm" className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
                       <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
+                      Case Study
                     </Button>
                     <Button size="sm" variant="outline" className="flex-1">
                       <Github className="w-4 h-4 mr-2" />

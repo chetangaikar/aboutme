@@ -1,22 +1,22 @@
 
-import { Code, Palette, Zap } from "lucide-react";
+import { Cloud, Cog, Zap } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
-      icon: Code,
-      title: "Full Stack Development",
-      description: "Building scalable web applications with modern technologies"
+      icon: Cloud,
+      title: "Cloud Architecture",
+      description: "Designing and implementing scalable cloud solutions on AWS and Azure"
     },
     {
-      icon: Palette,
-      title: "UI/UX Design",
-      description: "Creating intuitive and beautiful user experiences"
+      icon: Cog,
+      title: "CI/CD & Automation",
+      description: "Building robust deployment pipelines and infrastructure automation"
     },
     {
       icon: Zap,
       title: "Performance Optimization",
-      description: "Ensuring fast, efficient, and responsive applications"
+      description: "Ensuring high availability, scalability, and cost-effective operations"
     }
   ];
 
@@ -34,19 +34,19 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-600 leading-relaxed">
-                I'm a passionate developer with over 5 years of experience in creating digital solutions 
-                that make a difference. My journey started with a curiosity for how things work, and it has 
-                evolved into a career dedicated to building exceptional user experiences.
+                I'm a seasoned DevOps engineer with 9 years of hands-on experience in cloud infrastructure, 
+                automation, and continuous delivery. My expertise spans across AWS and Azure platforms, with 
+                deep knowledge in containerization technologies like Docker and Kubernetes.
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-                projects, or sharing knowledge with the developer community. I believe in the power of 
-                clean code, thoughtful design, and continuous learning.
+                I'm passionate about building resilient, scalable systems that enable teams to deploy faster 
+                and more reliably. When I'm not optimizing infrastructure, you'll find me exploring new 
+                cloud technologies, contributing to DevOps communities, or mentoring junior engineers.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-4">
-                {["React", "TypeScript", "Node.js", "Python", "AWS", "Docker"].map((tech) => (
+                {["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Jenkins"].map((tech) => (
                   <span key={tech} className="px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 rounded-full text-sm font-medium border border-blue-200">
                     {tech}
                   </span>
