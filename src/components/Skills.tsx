@@ -4,7 +4,7 @@ const skillCategories = [
   { category: "CI/CD", skills: ["Jenkins", "GitLab CI", "AWS CodePipeline", "Azure DevOps", "GitHub Actions"] },
   { category: "Containers", skills: ["Kubernetes", "Amazon EKS", "Amazon ECS", "Docker", "Amazon ECR"] },
   { category: "Observability", skills: ["Grafana", "CloudWatch", "Azure Monitor", "Datadog", "PagerDuty"] },
-  { category: "Security and compliance", skills: ["IAM", "HashiCorp Vault", "Azure Key Vault", "Security reviews", "SOC 2 readiness (cloud infrastructure)", "ISO 27001 readiness (cloud infrastructure)"] },
+  { category: "Security and identity", skills: ["IAM", "HashiCorp Vault", "Azure Key Vault", "Security reviews"] },
   { category: "Scripting", skills: ["Python", "Bash"] },
 ];
 

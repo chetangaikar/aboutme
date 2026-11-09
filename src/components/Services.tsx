@@ -1,10 +1,10 @@
 import { Briefcase, PenTool, Cloud, ShieldCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const services: { icon: typeof Briefcase; title: string; description?: string }[] = [
+const services = [
   { icon: Briefcase, title: "IT Consulting" },
   { icon: PenTool, title: "Engineering Design" },
-  { icon: Cloud, title: "Cloud Management", description: "Cloud security and compliance readiness: SOC 2 and ISO 27001 controls for cloud infrastructure." },
+  { icon: Cloud, title: "Cloud Management" },
   { icon: ShieldCheck, title: "Information Security" },
 ];
 
@@ -24,9 +24,6 @@ const Services = () => (
                 <s.icon className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-lg font-bold text-foreground">{s.title}</h3>
-              {s.description && (
-                <p className="mt-3 text-sm text-brand-muted leading-relaxed">{s.description}</p>
-              )}
             </div>
           ))}
         </div>
