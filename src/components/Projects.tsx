@@ -55,31 +55,31 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-brand-muted bg-clip-text text-transparent">
               Featured Projects
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-brand to-brand-accent mx-auto mb-8"></div>
           </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div key={project.title} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:scale-105 flex flex-col">
+              <div key={project.title} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-brand-border hover:scale-105 flex flex-col">
                 <div className="relative overflow-hidden">
                   <img src={project.image} alt={project.title} loading="lazy" className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
                 <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+                  <h3 className="text-xl font-bold mb-3 text-foreground">{project.title}</h3>
+                  <p className="text-brand-muted mb-4 text-sm leading-relaxed">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech) => (
-                      <span key={tech} className="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 rounded-full text-xs font-medium border border-blue-200">
+                      <span key={tech} className="px-3 py-1 bg-gradient-to-r from-brand-tint to-brand-tint-cool text-brand-dark rounded-full text-xs font-medium border border-brand-border">
                         {tech}
                       </span>
                     ))}
