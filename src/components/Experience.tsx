@@ -49,27 +49,27 @@ const roles = [
 ];
 
 const Experience = () => (
-  <section className="py-24 bg-white">
+  <section className="py-24 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-brand-muted bg-clip-text text-transparent">
             Experience
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-brand to-brand-accent mx-auto mb-8"></div>
         </div>
 
-        <ol className="relative border-l-2 border-blue-200 ml-3 space-y-10">
+        <ol className="relative border-l-2 border-brand-border ml-3 space-y-10">
           {roles.map((r, i) => (
             <li key={i} className="pl-8 relative">
-              <span className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-600"></span>
+              <span className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-gradient-to-br from-brand to-brand-accent"></span>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-                <h3 className="text-xl font-bold text-gray-900">{r.title}</h3>
-                <span className="text-sm font-medium text-blue-700">{r.period}</span>
+                <h3 className="text-xl font-bold text-foreground">{r.title}</h3>
+                <span className="text-sm font-medium text-brand-dark">{r.period}</span>
               </div>
-              <p className="text-gray-500 mb-3">{r.company}</p>
+              <p className="text-brand-muted mb-3">{r.company}</p>
               {r.points.length > 0 && (
-                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <ul className="list-disc pl-5 space-y-1 text-brand-muted">
                   {r.points.map((p) => <li key={p}>{p}</li>)}
                 </ul>
               )}

@@ -11,24 +11,24 @@ const items = [
 
 const Contact = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
+    <section className="py-24 bg-gradient-to-br from-brand-dark via-foreground to-brand-accent-dark text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-brand-light to-brand-accent-light mx-auto"></div>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20 grid sm:grid-cols-2 gap-6">
             {items.map((it) => {
               const content = (
                 <>
-                  <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-br from-brand to-brand-accent rounded-xl flex items-center justify-center">
                     <it.icon className="w-6 h-6" />
                   </div>
                   <div className="min-w-0">
                     <p className="font-medium">{it.label}</p>
-                    <p className="text-gray-300 break-words">{it.value}</p>
+                    <p className="text-brand-on-dark break-words">{it.value}</p>
                   </div>
                 </>
               );
@@ -43,7 +43,7 @@ const Contact = () => {
           </div>
 
           <div className="text-center mt-10">
-            <Button asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold">
+            <Button asChild className="bg-gradient-to-r from-brand to-brand-accent hover:from-brand-light hover:to-brand-accent-light text-white px-8 py-3 rounded-xl font-semibold">
               <a href="mailto:chetangaikar@gmail.com">Send an email</a>
             </Button>
           </div>
