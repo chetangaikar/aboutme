@@ -1,9 +1,10 @@
-const stats = [
+const stats: { value: string; label: string; valueClass?: string }[] = [
   { value: "9+", label: "Years of hands-on DevOps and cloud experience" },
   { value: "5", label: "Engineers led as technical lead (Onov8)" },
   { value: "~40%", label: "Reduction in operating expenses for an analytics aggregation platform" },
   { value: "Dubai", label: "Based in Dubai, UAE. Open to remote work." },
   { value: "60 days", label: "From kickoff to production-grade, multi-tenant, multi-environment, multi-region cloud infrastructure" },
+  { value: "SOC 2 / ISO 27001", label: "Readiness for cloud infrastructure controls", valueClass: "text-2xl md:text-3xl" },
 ];
 
 const Stats = () => (
@@ -15,10 +16,10 @@ const Stats = () => (
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-brand to-brand-accent mx-auto mb-16"></div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
           {stats.map((s) => (
             <div key={s.value} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-brand-border flex flex-col items-center">
-              <p className="text-4xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-brand to-brand-accent bg-clip-text text-transparent">
+              <p className={`${s.valueClass ?? "text-4xl md:text-5xl"} font-bold mb-3 bg-gradient-to-r from-brand to-brand-accent bg-clip-text text-transparent`}>
                 {s.value}
               </p>
               <p className="text-brand-muted leading-relaxed">{s.label}</p>
