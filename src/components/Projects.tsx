@@ -1,5 +1,11 @@
 import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import imgGovCloud from "@/assets/project-gov-cloud.jpg";
+import imgCostOpt from "@/assets/project-cost-optimisation.jpg";
+import imgEcsEks from "@/assets/project-ecs-eks.jpg";
+import imgCicd from "@/assets/project-cicd.jpg";
+import imgAwsNorm from "@/assets/project-aws-normalisation.jpg";
+import imgOpenSource from "@/assets/project-open-source.jpg";
 
 type Project = {
   title: string;
