@@ -1,5 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import photoAsset from "@/assets/chetan-gaikar-photo.jpg.asset.json";
 
 const Hero = () => {
   return (
@@ -12,8 +13,8 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-8 relative">
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-brand to-brand-accent flex items-center justify-center text-white text-4xl font-bold shadow-2xl animate-scale-in">
-                CG
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-brand to-brand-accent p-1 shadow-2xl animate-scale-in">
+                <img src={photoAsset.url} alt="Chetan Gaikar" className="w-full h-full rounded-full object-cover" />
               </div>
               <div className="absolute inset-0 rounded-full animate-ping bg-gradient-to-br from-brand/30 to-brand-accent/30"></div>
             </div>
