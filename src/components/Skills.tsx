@@ -10,23 +10,23 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-24 bg-gradient-to-br from-brand-tint to-brand-tint-cool">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-brand-muted bg-clip-text text-transparent">
               Technical Expertise
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-brand to-brand-accent mx-auto mb-8"></div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((c) => (
-              <div key={c.category} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <h3 className="text-xl font-bold mb-4 text-gray-900">{c.category}</h3>
+              <div key={c.category} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-brand-border">
+                <h3 className="text-xl font-bold mb-4 text-foreground">{c.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {c.skills.map((s) => (
-                    <span key={s} className="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 rounded-full text-sm font-medium border border-blue-200">
+                    <span key={s} className="px-3 py-1 bg-gradient-to-r from-brand-tint to-brand-tint-cool text-brand-dark rounded-full text-sm font-medium border border-brand-border">
                       {s}
                     </span>
                   ))}
