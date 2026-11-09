@@ -1,136 +1,51 @@
-
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+
+const items = [
+  { icon: Mail, label: "Email", value: "chetangaikar@gmail.com", href: "mailto:chetangaikar@gmail.com" },
+  { icon: Phone, label: "Phone (WhatsApp)", value: "+971 508447993", href: "https://wa.me/971508447993" },
+  { icon: MapPin, label: "Location", value: "Dubai, UAE" },
+  { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/chetangaikar", href: "https://linkedin.com/in/chetangaikar" },
+  { icon: Github, label: "GitHub", value: "github.com/chetangaikar", href: "https://github.com/chetangaikar" },
+];
 
 const Contact = () => {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Let's Build Something Great
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-8"></div>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Ready to optimize your infrastructure and accelerate your deployments? Let's discuss how we can transform your DevOps practices together.
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-                <p className="text-gray-300 mb-8 leading-relaxed">
-                  I'm always open to discussing new infrastructure challenges, cloud migrations, 
-                  or DevOps transformations. Let's connect and explore how I can help optimize your systems!
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                    <Mail className="w-6 h-6" />
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20 grid sm:grid-cols-2 gap-6">
+            {items.map((it) => {
+              const content = (
+                <>
+                  <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                    <it.icon className="w-6 h-6" />
                   </div>
-                  <div>
-                    <p className="font-medium">Email</p>
-                    <p className="text-gray-300">devops.engineer@example.com</p>
+                  <div className="min-w-0">
+                    <p className="font-medium">{it.label}</p>
+                    <p className="text-gray-300 break-words">{it.value}</p>
                   </div>
-                </div>
+                </>
+              );
+              return it.href ? (
+                <a key={it.label} href={it.href} target={it.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="flex items-center space-x-4 hover:opacity-80 transition-opacity">
+                  {content}
+                </a>
+              ) : (
+                <div key={it.label} className="flex items-center space-x-4">{content}</div>
+              );
+            })}
+          </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                    <Phone className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                    <MapPin className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Location</p>
-                    <p className="text-gray-300">Remote / Global</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-8">
-                <h4 className="text-lg font-semibold mb-4">Connect With Me</h4>
-                <div className="flex space-x-4">
-                  {[
-                    { icon: Linkedin, href: "#" },
-                    { icon: Github, href: "#" },
-                    { icon: Twitter, href: "#" },
-                  ].map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.href}
-                      className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
-                    >
-                      <social.icon className="w-5 h-5" />
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                    <Input
-                      id="name"
-                      type="text"
-                      placeholder="Your Name"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="your@email.com"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2">Subject</label>
-                  <Input
-                    id="subject"
-                    type="text"
-                    placeholder="Infrastructure Consultation"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                  <Textarea
-                    id="message"
-                    rows={5}
-                    placeholder="Tell me about your infrastructure challenges..."
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 resize-none"
-                  />
-                </div>
-
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
-                  Send Message
-                </Button>
-              </form>
-            </div>
+          <div className="text-center mt-10">
+            <Button asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold">
+              <a href="mailto:chetangaikar@gmail.com">Send an email</a>
+            </Button>
           </div>
         </div>
       </div>
