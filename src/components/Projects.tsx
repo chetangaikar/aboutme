@@ -19,37 +19,37 @@ const projects: Project[] = [
   {
     title: "Government cloud infrastructure (UAE)",
     description: "Built, secured, and optimised AWS infrastructure for a UAE government project, reducing turnaround time and operating expenses.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800&h=600",
+    image: imgGovCloud,
     technologies: ["AWS", "Terraform", "Packer"],
   },
   {
     title: "Cost optimisation for an analytics platform",
     description: "Reduced operating expenses by approximately 40% through infrastructure and platform optimisation.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600",
+    image: imgCostOpt,
     technologies: ["AWS", "Kubernetes", "Terraform"],
   },
   {
     title: "ECS to EKS modernisation",
     description: "Proof of concept migrating containerised workloads from Amazon ECS to Amazon EKS, benchmarking provisioning, autoscaling, and deployments.",
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=800&h=600",
+    image: imgEcsEks,
     technologies: ["EKS", "ECS", "Kubernetes"],
   },
   {
     title: "CI/CD pipeline automation",
     description: "Jenkins, GitLab CI, AWS CodePipeline, and Azure DevOps pipelines with approval gates and environment-based release controls.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80&w=800&h=600",
+    image: imgCicd,
     technologies: ["Jenkins", "GitLab CI", "Azure DevOps"],
   },
   {
     title: "AWS account normalisation",
     description: "Standardised an AWS account with 600+ resources, improving reliability and reducing operating expenses.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800&h=600",
+    image: imgAwsNorm,
     technologies: ["AWS", "CloudWatch", "Lambda"],
   },
   {
     title: "Open-source work",
     description: "TerraformSBB (reusable Terraform building blocks), awsRemedies (Python and Lambda utilities), and awsArchDiagram.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600",
+    image: imgOpenSource,
     technologies: ["Terraform", "Python", "AWS"],
     links: [
       { label: "TerraformSBB", href: "https://github.com/chetangaikar/awsTerraformSBB" },
