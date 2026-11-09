@@ -20,6 +20,13 @@ const Hero = () => {
             </div>
           </div>
 
+          <div className="mb-6 animate-fade-in">
+            <span className="inline-flex items-center gap-2 rounded-full border border-brand-border-cool bg-white/70 px-4 py-1.5 text-sm font-medium text-brand-accent-dark">
+              <span className="w-2 h-2 rounded-full bg-brand-accent"></span>
+              Open to full-time opportunities
+            </span>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-brand-dark to-brand-accent-dark bg-clip-text text-transparent animate-fade-in">
             Chetan Gaikar
           </h1>

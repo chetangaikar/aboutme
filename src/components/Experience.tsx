@@ -1,6 +1,13 @@
 const roles = [
   {
-    title: "Lead DevOps Engineer", company: "Onov8 LLC FZ, Dubai", period: "2025 to 2026",
+    title: "Independent DevOps Consultant", company: "Remote, based in Dubai, UAE", period: "March 2026 to present",
+    points: [
+      "Consulting on cloud infrastructure, CI/CD, and Kubernetes platforms for clients.",
+      "Open to full-time opportunities.",
+    ],
+  },
+  {
+    title: "Lead DevOps Engineer", company: "Onov8 LLC FZ, Dubai", period: "March 2025 to March 2026",
     points: [
       "Led a team of 5 DevOps engineers through platform delivery and design reviews.",
       "Designed and managed AWS ECS infrastructure with Terraform and Packer, using autoscaling spot workloads to control cost.",

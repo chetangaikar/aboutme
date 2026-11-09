@@ -21,7 +21,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <p className="text-lg text-brand-muted leading-relaxed">
-                Lead DevOps Engineer with a background in cloud infrastructure, CI/CD automation, and team leadership. I have led teams of up to 5 engineers, reduced operating costs on production platforms, and built multi-environment infrastructure for government and enterprise projects in the UAE and internationally.
+                Lead DevOps Engineer with a background in cloud infrastructure, CI/CD automation, and team leadership. I have led teams of up to 5 engineers, reduced operating costs on production platforms, and built multi-environment infrastructure for government and enterprise projects in the UAE and internationally. I'm currently independent and looking for my next full-time DevOps or cloud leadership role.
               </p>
 
               <div className="p-6 rounded-2xl bg-gradient-to-br from-brand-tint to-brand-tint-cool border border-brand-border">

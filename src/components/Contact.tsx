@@ -20,6 +20,10 @@ const Contact = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-brand-light to-brand-accent-light mx-auto"></div>
           </div>
 
+          <p className="text-center text-lg text-brand-on-dark mb-8">
+            Open to full-time DevOps and cloud leadership roles. Get in touch.
+          </p>
+
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20 grid sm:grid-cols-2 gap-6">
             {items.map((it) => {
               const content = (
