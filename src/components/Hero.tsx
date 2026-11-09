@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
 
           <p className="text-base md:text-lg text-brand-muted mb-4 animate-fade-in">
-            Dubai, UAE. Available for remote work.
+            UAE & India. Available for remote work.
           </p>
 
           <p className="text-lg text-brand-muted mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in delay-500">
