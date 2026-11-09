@@ -2,7 +2,7 @@ const stats: { value: string; label: string; valueClass?: string }[] = [
   { value: "9+", label: "Years of hands-on DevOps and cloud experience" },
   { value: "5", label: "Engineers led as technical lead (Onov8)" },
   { value: "~40%", label: "Reduction in operating expenses for an analytics aggregation platform" },
-  { value: "Dubai", label: "Based in Dubai, UAE. Open to remote work." },
+  { value: "Dubai", label: "Based in Dubai, UAE. Open to remote work in India and around the world." },
   { value: "60 days", label: "From kickoff to production-grade, multi-tenant, multi-environment, multi-region cloud infrastructure" },
   { value: "SOC 2 / ISO 27001", label: "Readiness for cloud infrastructure controls", valueClass: "text-2xl md:text-3xl" },
 ];
