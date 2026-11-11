@@ -15,25 +15,24 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-8 relative">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-8">
+            <div className="w-44 h-44 md:w-56 md:h-56 shrink-0 relative">
               <div className="w-full h-full rounded-full bg-gradient-to-br from-brand to-brand-accent p-1 shadow-2xl animate-scale-in">
                 <img src={photoUrl} alt="Chetan Gaikar" className="w-full h-full rounded-full object-cover" />
               </div>
-              <div className="absolute inset-0 rounded-full animate-ping bg-gradient-to-br from-brand/30 to-brand-accent/30"></div>
+            </div>
+            <div className="text-center md:text-left">
+              <div className="mb-4 animate-fade-in">
+                <span className="inline-flex items-center gap-2 rounded-full border border-brand-border-cool bg-white/70 px-4 py-1.5 text-sm font-medium text-brand-accent-dark">
+                  <span className="w-2 h-2 rounded-full bg-brand-accent"></span>
+                  Open to full-time opportunities
+                </span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold pb-2 bg-gradient-to-r from-foreground via-brand-dark to-brand-accent-dark bg-clip-text text-transparent animate-fade-in">
+                Chetan Gaikar
+              </h1>
             </div>
           </div>
-
-          <div className="mb-6 animate-fade-in">
-            <span className="inline-flex items-center gap-2 rounded-full border border-brand-border-cool bg-white/70 px-4 py-1.5 text-sm font-medium text-brand-accent-dark">
-              <span className="w-2 h-2 rounded-full bg-brand-accent"></span>
-              Open to full-time opportunities
-            </span>
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-brand-dark to-brand-accent-dark bg-clip-text text-transparent animate-fade-in">
-            Chetan Gaikar
-          </h1>
 
           <p className="text-xl md:text-3xl text-brand-muted mb-4 animate-fade-in delay-300">
             DevOps Lead | Cloud Infrastructure & Site Reliability Engineering
