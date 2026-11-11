@@ -1,6 +1,6 @@
 const stats: { value: string; label: string; valueClass?: string }[] = [
-  { value: "650", label: "Microservices" },
-  { value: "12", label: "Production environments" },
+  { value: "650", label: "Microservices across production platforms" },
+  { value: "12", label: "Production environments built and maintained" },
   { value: "9+", label: "Years of hands-on DevOps and cloud experience" },
   { value: "60 days", label: "From kickoff to production-grade, multi-tenant, multi-environment, multi-region cloud infrastructure" },
   { value: "~40%", label: "Reduction in operating expenses for an analytics aggregation platform" },
@@ -13,14 +13,14 @@ const Stats = () => (
   <section className="py-24 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-brand-muted bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 pb-2 bg-gradient-to-r from-foreground to-brand-muted bg-clip-text text-transparent">
           At a glance
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-brand to-brand-accent mx-auto mb-16"></div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((s) => (
-            <div key={s.value} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-brand-border flex flex-col items-center">
+            <div key={s.value} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-brand-border flex flex-col items-center justify-center">
               <p className={`${s.valueClass ?? "text-4xl md:text-5xl"} font-bold mb-3 bg-gradient-to-r from-brand to-brand-accent bg-clip-text text-transparent`}>
                 {s.value}
               </p>
