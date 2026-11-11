@@ -2,6 +2,10 @@ import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import photoAsset from "@/assets/chetan-gaikar-photo.jpg.asset.json";
 
+const photoUrl = import.meta.env.MODE === "github-pages"
+  ? `${import.meta.env.BASE_URL}assets/chetan-gaikar-photo.jpg`
+  : photoAsset.url;
+
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-brand-tint via-background to-brand-tint-cool relative overflow-hidden py-16">
@@ -14,7 +18,7 @@ const Hero = () => {
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-8 relative">
               <div className="w-full h-full rounded-full bg-gradient-to-br from-brand to-brand-accent p-1 shadow-2xl animate-scale-in">
-                <img src={photoAsset.url} alt="Chetan Gaikar" className="w-full h-full rounded-full object-cover" />
+                <img src={photoUrl} alt="Chetan Gaikar" className="w-full h-full rounded-full object-cover" />
               </div>
               <div className="absolute inset-0 rounded-full animate-ping bg-gradient-to-br from-brand/30 to-brand-accent/30"></div>
             </div>
@@ -52,7 +56,7 @@ const Hero = () => {
             </Button>
 
             <Button asChild size="lg" variant="outline" className="border-2 border-brand-border px-8 py-4 rounded-full text-lg font-semibold text-brand-dark hover:bg-brand-tint transition-all duration-300 hover:scale-105">
-              <a href="/cv.pdf" download>
+              <a href={`${import.meta.env.BASE_URL}cv.pdf`} download>
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </a>

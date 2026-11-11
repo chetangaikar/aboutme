@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:pages": "vite build --mode github-pages && node scripts/prepare-pages.mjs",
+    "test:pages": "node --test scripts/pages-utils.test.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
