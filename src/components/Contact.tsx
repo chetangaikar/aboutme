@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const items = [
   { icon: Mail, label: "Email", value: "chetangaikar@gmail.com", href: "mailto:chetangaikar@gmail.com" },
-  { icon: Phone, label: "UAE (WhatsApp)", value: "+971 508447993", href: "https://wa.me/971508447993" },
-  { icon: Phone, label: "India", value: "+91 90040 21113", href: "tel:+919004021113" },
+  { icon: Phone, label: "UAE (WhatsApp)", value: "+971 508447993", href: "tel:+971508447993" },
+  { icon: Phone, label: "India", value: "+91 90040 21113", href: "https://wa.me/919004021113" },
   { icon: MapPin, label: "Location", value: "UAE & India · Remote ready" },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/chetangaikar", href: "https://linkedin.com/in/chetangaikar" },
   { icon: Github, label: "GitHub", value: "github.com/chetangaikar", href: "https://github.com/chetangaikar" },
