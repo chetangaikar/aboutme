@@ -1,4 +1,4 @@
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import photoAsset from "@/assets/chetan-gaikar-photo.jpg.asset.json";
 
@@ -22,11 +22,19 @@ const Hero = () => {
               </div>
             </div>
             <div className="text-center md:text-left">
-              <div className="mb-4 animate-fade-in">
+              <div className="mb-4 flex flex-wrap items-center justify-center gap-3 md:justify-start animate-fade-in">
                 <span className="inline-flex items-center gap-2 rounded-full border border-brand-border-cool bg-white/70 px-4 py-1.5 text-sm font-medium text-brand-accent-dark">
                   <span className="w-2 h-2 rounded-full bg-brand-accent"></span>
                   Open to full-time opportunities
                 </span>
+                <a
+                  href="#services"
+                  className="inline-flex items-center gap-2 rounded-full border border-brand-border bg-white/70 px-4 py-1.5 text-sm font-medium text-brand-dark transition-colors hover:bg-brand-tint"
+                >
+                  <Briefcase className="h-3.5 w-3.5" />
+                  Available for freelance projects
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </a>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold pb-2 bg-gradient-to-r from-foreground via-brand-dark to-brand-accent-dark bg-clip-text text-transparent animate-fade-in">
                 Chetan Gaikar
